@@ -564,6 +564,12 @@ html[data-pt="night"] .plate-box.theme-ink, html[data-pt="night"] .plate-box.the
 .gallery.gallery-eq .fig-auto img { width: 100%; height: auto; max-height: none; }
 @media (max-width: 760px) { .gallery.gallery-eq { flex-direction: column; } .gallery.gallery-eq > .fig { flex: none; width: 100%; } }
 
+/* Strategy cards share one frame and one image scale. Only blank corner margins
+   are masked so the original lettering stays intact on the extended green fill. */
+.gallery-uniform-cards .fig-media { position: relative; aspect-ratio: 431 / 282; background: #478B38; }
+.gallery-uniform-cards .fig-media img { position: absolute; top: 0; left: 0; width: auto; max-width: none; height: 100%; object-fit: contain; clip-path: inset(0 6%); }
+@media (max-width: 760px) { .gallery.gallery-uniform-cards { grid-template-columns: minmax(0, 1fr); } }
+
 /* hero stack: plates beyond the four in view wait, invisible, behind the front plate */
 .sc { transition-property: left, top, rotate, scale, translate, opacity; }
 .sc.is-waiting { opacity: 0; pointer-events: none; }

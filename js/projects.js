@@ -608,7 +608,7 @@ window.PROJECTS = [
         src: "assets/work/wax-moth/system.jpg",
         caption: { en: "Stakeholder map: product, money and service flows", zh: "利益相关者地图：产品、资金与服务流向" },
         theme: "paper" },
-      { type: "gallery", cols: 3, ratio: "auto", equal: true,
+      { type: "gallery", cols: 3, ratio: "auto", uniformCards: true,
         items: [
           { src: "assets/work/wax-moth/strategy-collect.jpg", caption: { en: "Encourage collection", zh: "鼓励收集" } },
           { src: "assets/work/wax-moth/strategy-factory.jpg", caption: { en: "Process at a wax moth factory", zh: "建立蜡螟工厂" } },

@@ -370,7 +370,7 @@
         return `<div class="blk blk-wide${b.full ? " blk-full" : ""}">${figure(b.src, b.caption, b.ratio || "16/9", b.frame, b.bg)}</div>`;
       case "gallery":
         // equal: true -> every image in the row gets the same height (widths follow each image's own proportions)
-        return `<div class="blk blk-wide gallery${b.equal ? " gallery-eq" : ""}" style="--cols:${b.cols || 2}">${b.items.map((i) => figure(i.src, i.caption, i.ratio || b.ratio || "4/3", b.frame, b.bg)).join("")}</div>`;
+        return `<div class="blk blk-wide gallery${b.equal ? " gallery-eq" : ""}${b.uniformCards ? " gallery-uniform-cards" : ""}" style="--cols:${b.cols || 2}">${b.items.map((i) => figure(i.src, i.caption, i.ratio || b.ratio || "4/3", b.frame, b.bg)).join("")}</div>`;
       case "viewer": return viewerHTML(b);
       case "steps": return stepsHTML(b);
       case "split":
