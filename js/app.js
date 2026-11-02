@@ -3,13 +3,11 @@
 (function () {
   const $ = (s, el = document) => el.querySelector(s);
   const app = $("#app");
+  // Each page load starts in English; visitors can switch languages below.
   let lang = "en";
   let engravings = [];
   let workFilter = "all";
   const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  try { lang = localStorage.getItem("sz-lang") || ""; } catch (e) { lang = ""; }
-  if (lang !== "en" && lang !== "zh") lang = (navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en";
 
   const t = (v) => (v == null ? "" : typeof v === "object" && !Array.isArray(v) ? (v[lang] ?? v.en ?? "") : v);
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -623,7 +621,6 @@
     const lb = e.target.closest("[data-lang]");
     if (lb) {
       lang = lb.dataset.lang;
-      try { localStorage.setItem("sz-lang", lang); } catch (err) { /* storage unavailable */ }
       const y = window.scrollY; prevHash = null; route(); jump(y); return;
     }
     const cp = e.target.closest(".copy");
