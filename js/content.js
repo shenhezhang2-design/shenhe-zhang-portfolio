@@ -5,7 +5,7 @@
 
 window.PROFILE = {
   name: "Shenhe Zhang",
-  nickname: "Jake",
+  nickname: "Shane",
   // 头像：把你的照片放到 assets/avatar.jpg（建议竖图、背景干净、光线均匀）。
   // 首页会把它转成浅米色底、橙色网点（半色调）的印刷风格，鼠标移上去网点会变成更深的橙色。没有照片时显示占位剪影。
   avatar: "assets/avatar.jpg",
