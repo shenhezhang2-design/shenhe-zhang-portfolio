@@ -524,6 +524,7 @@
       <div class="about-intro">
         <p class="eyebrow mono">${T(U.aboutTitle)}</p>
         <h1 class="statement">${T(A.statement)}</h1>
+        ${A.buildNote ? `<p class="about-build">${T(A.buildNote)}</p>` : ""}
       </div>
     </section>
 

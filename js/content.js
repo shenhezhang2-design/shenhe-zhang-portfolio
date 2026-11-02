@@ -43,6 +43,10 @@ window.PROFILE = {
 };
 
 window.ABOUT = {
+  buildNote: {
+    en: "I built this portfolio website through vibe coding: using AI-assisted development to turn my design ideas into a working website and refine it through iteration.",
+    zh: "我通过 vibe coding（AI 辅助开发）搭建了这个作品集网站，将设计想法转化为可运行的网站，并通过迭代不断完善。"
+  },
   statement: {
     en: "From physical products to screens to conversations with AI, the place where people meet technology keeps moving. I want to make each new point of contact feel more natural and more trustworthy.",
     zh: "从实体产品到屏幕，再到与 AI 的对话，人与技术相遇的地方一直在变。我希望在每一个新的接触点上，都把体验设计得更自然、更可信。"
@@ -72,6 +76,9 @@ window.ABOUT = {
     { group: { en: "UX", zh: "体验设计" },
       items: { en: ["User research", "Usability testing", "Interaction design", "Wireframing & prototyping", "Design systems", "Icon design", "Developer handoff"],
                zh: ["用户研究", "可用性测试", "交互设计", "线框与原型", "设计系统", "图标设计", "开发交付"] } },
+    { group: { en: "Development", zh: "开发" },
+      items: { en: ["Vibe coding (AI-assisted development)"],
+               zh: ["Vibe coding（AI 辅助开发）"] } },
     { group: { en: "Tools", zh: "工具" },
       items: ["Figma", "Rhino", "Blender", "Photoshop", "Illustrator", "InDesign", "After Effects"] },
     { group: { en: "Languages", zh: "语言" },
@@ -154,5 +161,5 @@ window.UI = {
   bringForward: { en: "Bring forward", zh: "移到前面" },
   nextPlate: { en: "Next plate", zh: "下一张" },
   figCaption: { en: "Fig. 1 — The designer, in halftone. Click a plate behind to bring it forward.", zh: "图 1 — 设计师肖像（网点印刷）。点击后方的图版可将其移到前面。" },
-  footerNote: { en: "Designed and built by Shenhe Zhang.", zh: "由 Shenhe Zhang 设计与搭建。" }
+  footerNote: { en: "Designed by Shenhe Zhang. Built through vibe coding.", zh: "由 Shenhe Zhang 设计，通过 vibe coding 搭建。" }
 };
